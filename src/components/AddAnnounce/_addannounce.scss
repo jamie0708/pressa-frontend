@@ -1,0 +1,339 @@
+.add {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__home {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+
+    img {
+      width: 25px;
+      height: 25px;
+    }
+    span {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      margin-left: 10px;
+    }
+  }
+
+  &__block {
+    padding: 0 14rem;
+
+    h2 {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 29px;
+
+      margin-top: 3rem;
+    }
+
+    &__top {
+      border: 1px solid rgba(51, 51, 51, 0.1);
+      border-radius: 2px;
+      width: 700px;
+      height: 450px;
+
+      padding: 0 2.3rem;
+      margin-top: 3rem;
+
+      .date {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+
+          opacity: 0.4;
+
+          margin-top: 2rem;
+        }
+        label {
+          display: flex;
+
+          margin-top: 1rem;
+
+          input {
+            padding: 0 50px;
+            cursor: pointer;
+
+            width: 171px;
+            height: 50px;
+
+            background: rgb(224, 224, 224);
+            border-radius: 3px;
+          }
+
+          .time {
+            margin-left: 3rem;
+            display: block;
+            text-align: center;
+          }
+        }
+      }
+
+      .direction {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+
+        &__left {
+          display: flex;
+          flex-direction: column;
+
+          select {
+            width: 300px;
+            height: 50px;
+            background: rgb(224, 224, 224);
+            border-radius: 3px;
+            margin-top: 1rem;
+            cursor: pointer;
+            padding: 10px;
+          }
+        }
+
+        &__right {
+          margin-left: 2rem;
+
+          display: flex;
+          flex-direction: column;
+
+          select {
+            width: 300px;
+            height: 50px;
+            background: rgb(224, 224, 224);
+            border-radius: 3px;
+
+            margin-top: 1rem;
+            cursor: pointer;
+            padding: 10px;
+          }
+        }
+      }
+
+      .type {
+        margin-top: 3rem;
+        display: flex;
+        align-items: center;
+
+        &__left {
+          .buttons {
+            margin-top: 1rem;
+
+            button {
+              width: 150px;
+              background: rgb(224, 224, 224);
+              height: 50px;
+              border-radius: 3px;
+
+              &:active {
+                background: var(--button-color);
+                color: white;
+              }
+            }
+          }
+        }
+
+        &__right {
+          display: flex;
+          flex-direction: column;
+          margin-left: 2rem;
+
+          input {
+            border-radius: 3px;
+            margin-top: 1rem;
+            width: 300px;
+            height: 50px;
+            background: rgb(224, 224, 224);
+
+            &::placeholder {
+              color: #0085ff;
+              padding-left: 15px;
+            }
+          }
+        }
+      }
+    }
+
+    &__middle {
+      margin-top: 2rem;
+
+      .checkbox {
+        display: flex;
+        align-items: center;
+
+        label {
+          margin-left: 3.5rem;
+
+          input {
+            margin-left: 10px;
+          }
+        }
+      }
+
+      .organization {
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid rgba(51, 51, 51, 0.1);
+        border-radius: 2px;
+        width: 700px;
+        height: 350px;
+
+        padding-left: 3.5rem;
+        padding-bottom: 1.5rem;
+        margin-top: 3rem;
+        label {
+          width: 48%;
+          margin-top: 2rem;
+          display: flex;
+          flex-direction: column;
+
+          input {
+            width: 280px;
+            height: 50px;
+            background: rgb(224, 224, 224);
+            border-radius: 3px;
+
+            margin-top: 10px;
+            padding: 1rem;
+
+            &::placeholder {
+              color: black;
+            }
+          }
+        }
+      }
+    }
+
+    &__post {
+      border: 1px solid rgba(51, 51, 51, 0.1);
+      border-radius: 2px;
+
+      width: 700px;
+      height: 950px;
+      padding: 0 2.5rem;
+      padding-bottom: 1.5rem;
+      margin-top: 3.5rem;
+
+      p {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 62px;
+
+        opacity: 0.2;
+
+        margin-top: 1.5rem;
+      }
+
+      .desc {
+        margin-top: 4rem;
+
+        label {
+          display: flex;
+          flex-direction: column;
+          input {
+            width: 100%;
+            height: 50px;
+            background: rgb(224, 224, 224);
+            border-radius: 3px;
+            margin-top: 10px;
+            padding: 1rem;
+            &::placeholder {
+              color: black;
+              opacity: 0.4;
+            }
+          }
+        }
+      }
+
+      .upload {
+        margin-top: 3rem;
+
+        display: flex;
+        flex-direction: column;
+
+        label {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 1rem;
+
+          width: 160px;
+          height: 50px;
+
+          border-radius: 3px;
+          padding: 10px 12px;
+          cursor: pointer;
+          background: #006aff;
+
+          input[type="file"] {
+            display: none;
+          }
+
+          span {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+
+            color: #ffffff;
+            margin-left: 5px;
+          }
+        }
+        p {
+          color: var(--button-color);
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 19px;
+          opacity: 1;
+        }
+      }
+
+      .theme {
+        margin-top: 6rem;
+
+        input {
+          width: 100%;
+          height: 250px;
+          background: rgb(224, 224, 224);
+          border-radius: 3px;
+          margin-top: 10px;
+          padding: 1rem;
+
+          &::placeholder {
+            color: black;
+            opacity: 0.4;
+          }
+        }
+      }
+
+      .btns {
+        margin-top: 3rem;
+
+        .cancel {
+          opacity: 0.4;
+          border: 1px solid #b2bbc8;
+          border-radius: 3px;
+
+          padding: 1rem 2rem;
+        }
+
+        .send {
+          border-radius: 3px;
+          background: var(--button-color);
+          color: white;
+
+          margin-left: 10px;
+          padding: 1rem 3rem;
+        }
+      }
+    }
+  }
+}

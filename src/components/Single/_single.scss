@@ -1,0 +1,17 @@
+.single {
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        overflow-x: scroll;
+    }
+    
+    &__slide {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    
+        img {
+    
+        }
+    }
+}

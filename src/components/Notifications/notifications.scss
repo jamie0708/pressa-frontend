@@ -1,0 +1,90 @@
+.notifications {
+  height: 65%;
+  overflow-x: scroll;
+
+  h2 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 13px;
+  }
+
+  &__box {
+    border-bottom: 2px solid #ccd7df;
+    padding: 1rem 0;
+    width: 81%;
+
+    &:hover {
+      background-color: #67befc38;
+    }
+
+    &__top {
+      display: flex;
+      align-items: center;
+
+      p {
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 27px;
+      }
+
+      button {
+        border-radius: 4px;
+        padding: 1rem 2.5rem;
+
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 20px;
+      }
+
+      .delete {
+        margin-left: auto;
+        margin-right: 10px;
+        background: #d4e0e9;
+
+        &:hover {
+          background: #cad4db;
+        }
+
+        &:active {
+          background: #b6bbbe;
+        }
+      }
+
+      .add {
+        background: #0094ff;
+        color: white;
+
+        &:hover {
+          background: #1185d8;
+        }
+
+        &:active {
+          background: #075994;
+        }
+      }
+    }
+
+    &__bottom {
+      display: flex;
+      align-items: center;
+
+      p {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+
+        opacity: 0.4;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+
+        margin-left: 3rem;
+
+        color: var(--light-blue);
+      }
+    }
+  }
+}

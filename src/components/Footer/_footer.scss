@@ -1,0 +1,55 @@
+.footer {
+  background: var(--main-color);
+
+  margin-top: 7rem;
+  padding: 1.5rem 0;
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+      width: 100px;
+      height: 40px;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &__list {
+        margin-left: 3rem;
+        span {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  &__call {
+    display: flex;
+    align-items: center;
+
+    span {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 21px;
+
+      margin-left: 5px;
+
+      color: #ffffff;
+    }
+  }
+
+  &__social {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      width: 90px;
+      margin-right: 9rem;
+  }
+}
