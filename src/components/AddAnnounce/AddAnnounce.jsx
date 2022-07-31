@@ -14,7 +14,7 @@ export default function AddAnnounce() {
     <div className="container">
       <div className="add">
         <div className="add__home">
-          <img src={house} alt="" />
+          <img src={house} alt="house" />
           <span>E’lon berish</span>
         </div>
 
